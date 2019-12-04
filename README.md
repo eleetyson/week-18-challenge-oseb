@@ -1,7 +1,7 @@
 # Week 18 Challenge
 
 
-## React Todo App
+## React Space App
 
 
 ### Project Instructions
@@ -21,7 +21,7 @@ To complete this challenge you will practice working with the following concepts
 - Client-Side Routing
 
 
-The skeleton of each component has been set up for you but you will need to implement the functionality outlined below.  
+The files for each component have been set up but you will need to create each component and implement the functionality below. NOTE: when you start the application for the first time you will receive an error because there is not yet an App component to be rendered!
 
 ## App Component
 
@@ -54,3 +54,5 @@ Consider: What type of component (functional or class) should Number be and why?
 ## Getting Started
 
 To start install the necessary packages, run `npm install` and then run `npm start` to start the application.
+
+NOTE: when you start the application for the first time you will receive an error because there is not yet an App component to be rendered!
