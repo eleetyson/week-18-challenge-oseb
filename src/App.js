@@ -18,7 +18,10 @@ export default class App extends Component {
       <Router>
         <div>
           <Navbar />
-          <Route exact path="/people" component={People}/>
+          <Route
+            exact path="/people"
+            render={ () => <People astros={this.state.astros} /> }
+          />
           <Route
             exact path="/number"
             render={ () => <Number astros={this.state.astros} /> }
