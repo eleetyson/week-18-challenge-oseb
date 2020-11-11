@@ -7,7 +7,7 @@ NavBar component [X]
   - holds the 2 links for the People and Number components
   - should be a functional component
 
-People component
+People component [X]
   - render the name + craft values for ea person in space
 
 Number component [X]
