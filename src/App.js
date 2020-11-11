@@ -18,23 +18,21 @@ export default class App extends Component {
       <Router>
         <div>
           <Navbar />
+          <Route exact path="/people" component={People}/>
           <Route
-            exact path="/people"
-            render={(props) => (
-              <People {...props} astros={this.state.astros} />
-            )}
+            exact path="/number"
+            render={ () => <Number astros={this.state.astros} /> }
           />
-          <Route exact path="/number" component={Number} />
         </div>
       </Router>
     )
   }
 
   componentDidMount() {
-    fetch("http://api.open-notify.org/astros")
+    fetch("http://api.open-notify.org/astros.json")
     .then(response => response.json())
     .then(data => {
-      this.setState({astronauts: data.people})
+      this.setState({astros: data.people})
     })
   }
 
